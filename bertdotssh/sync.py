@@ -4,7 +4,7 @@ import pathlib
 import sys
 
 # Import third-party and custom modules
-from bertssh.logger import Logger
+from bertdotssh.logger import Logger
 # Setup Logging
 logger = Logger().init_logger(__name__)
 
@@ -18,7 +18,7 @@ else:
 try:
     import paramiko
     from paramiko import SSHClient, ssh_exception
-    from bertssh.scp import SCPException 
+    from bertdotssh.scp import SCPException 
 
 except ImportError as e:
     print('Error in %s ' % os.path.basename(self_file_name))

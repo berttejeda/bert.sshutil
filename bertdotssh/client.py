@@ -7,7 +7,7 @@ import zipfile
 import warnings
 
 # Import third-party and custom modules
-from bertssh.logger import Logger
+from bertdotssh.logger import Logger
 # Setup Logging
 logger = Logger().init_logger(__name__)
 
@@ -59,8 +59,8 @@ try:
     import paramiko
     from paramiko import SSHClient, SFTPClient, ssh_exception            
     from socket import gaierror
-    from bertssh.sync import SSHSync
-    from bertssh.scp import SCPClient, SCPException   
+    from bertdotssh.sync import SSHSync
+    from bertdotssh.scp import SCPClient, SCPException   
 except ImportError as e:
     print('Error in %s ' % os.path.basename(self_file_name))
     print('Failed to import at least one required module')
