@@ -25,10 +25,10 @@ With this module you can:
 # Installation
 
 * From pypi: `pip3 install bertssh`
-* From this git repo: `pip3 install git+https://github.com/berttejeda/bertssh.git`<br />
+* From this git repo: `pip3 install git+https://github.com/berttejeda/bert.ssh.git`<br />
   Note: To install a specific version of the library from this git repo, <br />
   suffix the git URL in the above command with @{ tag name }, e.g.: <br />
-  git+https://github.com/berttejeda/bertssh.git@1.0.0
+  git+https://github.com/berttejeda/bert.ssh.git@1.0.0
 
 # Usage Examples
 
