@@ -10,10 +10,10 @@ import time
 from tempfile import mkstemp
 import yaml
 # Import third-party and custom modules
-from bertdotssh.logger import Logger
-from bertdotssh.dictutils import Struct
-from bertdotssh.invocation import RemoteCliInvocation
-from bertdotssh import client
+from bertdotsshutil.logger import Logger
+from bertdotsshutil.dictutils import Struct
+from bertdotsshutil.invocation import RemoteCliInvocation
+from bertdotsshutil import client
 
 # Setup Logging
 logger = Logger().init_logger(__name__)

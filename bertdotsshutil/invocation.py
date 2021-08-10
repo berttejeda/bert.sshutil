@@ -1,4 +1,4 @@
-from bertdotssh.logger import Logger
+from bertdotsshutil.logger import Logger
 import os
 import sys
 
