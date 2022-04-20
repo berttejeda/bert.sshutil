@@ -116,7 +116,7 @@ The above example scenarios exhibit the following programmatic behavior upon syn
       - Produce a list of files to sync by combining the output of the above two commands
   - If False
       - Produce a list of files to sync that have changed within the last 5 minutes
-1. Determine if remote path exists
+2. Determine if remote path exists
   - If False
       - If local is a git repo
         - Perform a git clone of the git repo against the remote path
