@@ -110,20 +110,20 @@ The above example scenarios exhibit the following programmatic behavior upon syn
 
 1. Determine if local working directory is a git repo
   - If True
-    - Determine the URL for the git remote via command `git config --get remote.origin.url`
-    - Determine the paths for any locally changed files via command `git diff-index HEAD --name-status`
-    - Determine the paths for any untracked files via command `git ls-files --others --exclude-standard`
-    - Produce a list of files to sync by combining the output of the above two commands
+      - Determine the URL for the git remote via command `git config --get remote.origin.url`
+      - Determine the paths for any locally changed files via command `git diff-index HEAD --name-status`
+      - Determine the paths for any untracked files via command `git ls-files --others --exclude-standard`
+      - Produce a list of files to sync by combining the output of the above two commands
   - If False
-    - Produce a list of files to sync that have changed within the last 5 minutes
+      - Produce a list of files to sync that have changed within the last 5 minutes
 1. Determine if remote path exists
   - If False
-    - If local is a git repo
-      - Perform a git clone of the git repo against the remote path
-      - Else, create the remote directory and synchronize the file list across the remote
+      - If local is a git repo
+        - Perform a git clone of the git repo against the remote path
+        - Else, create the remote directory and synchronize the file list across the remote
   - If True, determines if remote path is a git repo
-    - Determine set of files that have changed in the remote path
-    - If True & sync_no_clobber == True, synchronize locally changed <br />
-      files to remote path, skipping any files that have also changed on the remote
-    - If True & sync_no_clobber == False, synchronize locally changed <br />
-      files to remote path, overwriting any files that have also changed on the remote
+      - Determine set of files that have changed in the remote path
+      - If True & sync_no_clobber == True, synchronize locally changed <br />
+        files to remote path, skipping any files that have also changed on the remote
+      - If True & sync_no_clobber == False, synchronize locally changed <br />
+        files to remote path, overwriting any files that have also changed on the remote
