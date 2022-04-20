@@ -113,9 +113,9 @@ The above example scenarios exhibit the following programmatic behavior upon syn
     - Determine the URL for the git remote via command `git config --get remote.origin.url`
     - Determine the paths for any locally changed files via command `git diff-index HEAD --name-status`
     - Determine the paths for any untracked files via command `git ls-files --others --exclude-standard`
-    - Produce of a list of files to sync by combining the output of the above two commands
+    - Produce a list of files to sync by combining the output of the above two commands
   - If False
-    - Produce of a list of files to sync that have changed within the last 5 minutes
+    - Produce a list of files to sync that have changed within the last 5 minutes
 1. Determine if remote path exists
   - If False
     - If local is a git repo
